@@ -30,7 +30,7 @@
 	      text = fileContents ./base.vim;
 	    };
 
-	    vscode = mkif vscode.enable {
+	    vscode = mkIf vscode.enable {
 	      target = ".vscodevimrc";
 	      text = fileContents ./base.vim;
 	    };
